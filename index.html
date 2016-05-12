@@ -17,18 +17,77 @@
   <h2>HTML Tags und Attribute</h2>
   Was ist ein Tag und wie ist er aufgebaut? Beispiele für Tags und Attribute
   
+  HTML Tags sind Anweisungen, die die Inhalte einer Website strukturieren zb:
+
+  Das ist ein Tag < start und end tag > wie Absatz <p> </p> und Überschriften <h1></h1>
+  
   <h2>HTML Grundstruktur</h2>
   Wie sieht ein ganz einfaches HTML-Dokument (ohne Inhalt) aus? Was kommt in den head-Tag?
+
+Die Struktur sieht folgendermaßen aus:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Der Titel der Seite, der im Tab des Browsers dann angezeigt wird</title>
+
+
+</head>
+</body
+</html>
+  
   
   <h2>CSS Grundlagen</h2>
   Wie bindet man eine CSS-Datei in eine Seite ein? Gib (mindestens 3) Beispiele für CSS-Eigenschaften an!
   
+ style.css link:
+
+<link rel="stylesheet" href="style.css" type="text/css" /> 
+
+  div { 
+    margin: 10px;
+    padding: 10px;
+    background-color: blue; 
+    }
+  
   <h2>CSS Selektoren</h2>
   Wie schreibe ich einen CSS-Selektor? Gib die drei wichtigsten Arten von CSS-Selektoren an!
+ 
+  Diese html tag hat Class Attribute und id:
+  html tag <p class="key" id="principal">
+    
+
+.key {
+  padding: 10px;
+  color: green;
+  font-size: 20px;
+}
+
+#principal {
+  font-weight: bolder;
+  text-align: center;
+  background-color: green;
+}
+  
   
   <h2>Block- und Inline-Elemente</h2>
   Wie werden block- bzw inline-Elemente standardmäßig angezeigt? (es gibt 2 wesentliche Unterschiede) <br>
   Gib Beispiele für Block- und Inline-Elemente an!
+  .class oder #id Leerzeichen dann start klammer { inline-Elemente und ende klammer } zb:
+  
+.classname {
+  padding: 10px;
+  color: green;
+  font-size: 20px;
+}
+
+#idname {
+  font-weight: bolder;
+  text-align: center;
+  background-color: green;
+}
+
+
   
   <h2>Box-Modell</h2>
   Gib einen Kurzen Überblick zum Box-Modell!
@@ -36,8 +95,17 @@
   <h2>Wo finde ich Hilfe?</h2>
   Zähle 3 websites auf, wo ich mir Hilfe suchen kann!
   
+ http://www.google.com, http://www.w3schools.com/, http://stackoverflow.com/
+  
   <h2>Git</h2>
   Finde heraus, was die folgenden Git-Befehle tun: git pull, git diff, git add, git commit
+  
+  git pull: Fetch und Zusammenführen von Änderungen auf dem Remote-Server in das Arbeitsverzeichnis
+  git diff: Es Zeigt die Unterschiede zwischen zwei Dateien
+  git add: Adding one or more files to staging (index):	git add <filename>
+  git commit: Commit Änderungen (aber noch nicht mit dem Remote-Repository):
+  git commit -m "Commit-Nachricht" git commit -m "Commit message"
+  
   
 </body>
 </html>
